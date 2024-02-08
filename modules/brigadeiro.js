@@ -2,6 +2,8 @@ import getRouter from '../router/changeEvent.js';
 
 export default function brigadeiro () {
     const div = document.getElementById("root");
+    const img = document.createElement("img");
+    img.src = "https://i.panelinha.com.br/i1/228-q-2859-brigadeiro.webp";
     
     div.innerHTML = 
     `
@@ -15,6 +17,7 @@ export default function brigadeiro () {
     buttonHome.addEventListener("click", () => getRouter('/'));
 
     div.appendChild(buttonHome);
+    div.appendChild(img);
 
     return div;
 }

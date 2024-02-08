@@ -2,6 +2,8 @@ import getRouter from '../router/changeEvent.js';
 
 export default function doces() {
     const div = document.getElementById("root");
+    const img = document.createElement("img");
+    img.src = "https://saborecia.com.br/wp-content/uploads/2020/08/MG_4421-scaled.jpg";
 
     div.innerHTML = 
     `
@@ -15,6 +17,7 @@ export default function doces() {
     buttonHome.addEventListener("click", () => getRouter('/'));
 
     div.appendChild(buttonHome);
+    div.appendChild(img);
 
     return div;
 }
